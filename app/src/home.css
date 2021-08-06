@@ -1,0 +1,377 @@
+body{
+  max-width: 100vw;
+  max-height: 100vh;
+  font-family: 'Roboto','Futura PT',sans-serif;
+}
+
+.homepage{
+  overflow: hidden;
+}
+
+/* actions */
+.show{
+  top:0;
+}
+
+.hide{
+  position: absolute;
+  top:-1000px;
+}
+
+.App{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage{
+  position: relative;
+  /* background-image: url("../src/img/daniel-j-schwarz-sq2kSZ2scSc-unsplash.jpg"); */
+  /* background-color: rgb(249, 218, 255); */
+  background-size: 100vw 100vw;
+  width: 100vw;
+  height: calc(100vh + 100px);
+  margin-top: -100px;
+}
+
+.navbar{
+  width: 100vw;
+  padding-top: 0rem !important;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+  width: 100vw;
+}
+
+.navbar a:hover{
+  color: rgb(22, 22, 22); 
+}
+
+.navbar #expanded-links{
+  position: absolute;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 100vw;
+  height: 70vh;
+  background-color: rgb(106, 64, 64);
+}
+
+.navbar #expanded-links li{
+  list-style: none;
+}
+
+.navbar #expanded-links li a{
+  color: rgba(255, 255, 255, 0.808);
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.navbar #expanded-links li a:hover{
+  color: rgb(43, 11, 11);
+}
+  
+.topnav a {
+  color: black;
+  padding: 20px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+}
+
+.topnav .topnav-header{
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav .topnav-header .icon{
+  width: 200px;
+  cursor: pointer;
+}
+
+.topnav .topnav-header .social-links{
+  display: flex;
+  align-items: center;
+}
+
+.topnav .topnav-header .social-links a:hover{
+  color: rgb(43, 11, 11);
+}
+
+.topnav .topnav-header .photograper-name:hover{
+  color: rgba(0, 0, 0, 0.685);
+}
+
+.topnav .topnav-header .photograper-name {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  font-family: Optima;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+.topnav .topnav-header .social-links a{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.main-title{
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(22, 22, 22); 
+  width: 100%;
+  font-family: 'Futura PT';
+}
+
+.main-title a{
+  text-decoration: none;
+  color: rgb(22, 22, 22); 
+}
+
+.main-title a:hover{
+  color: rgb(43, 11, 11);
+}
+
+.main-title h1{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 82px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+}
+
+.main-title span{
+  font-style: normal;
+  cursor: pointer; 
+}
+
+/* animated arrow-down */
+.scroll-prompt {
+	position: fixed;
+	z-index: 998;
+	bottom: -80px;
+	left: 50%;
+	margin-left: -80px;
+	width: 160px;
+  height: 160px;
+}
+
+.scroll-prompt .scroll-prompt-arrow-container {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -18px;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.scroll-prompt .scroll-prompt-arrow {
+  animation-name: opacity;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.scroll-prompt .scroll-prompt-arrow:last-child {
+  animation-direction: reverse;
+  margin-top: -6px;
+}
+.scroll-prompt .scroll-prompt-arrow > div {
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid rgb(22, 22, 22);;
+  border-bottom: 3px solid rgb(22, 22, 22);
+  transform: rotate(45deg) translateZ(1px);
+}
+
+/* buttons */
+
+.close-btn{
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.btn-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  margin-left: 15px;
+}
+
+.btn-price:hover {
+  background-color: rgb(252, 252, 252) !important;
+  color: black !important;
+  border-color: black !important;
+}
+
+/* portfolio */
+.portfolio img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section{
+  margin-top: 2em;
+}
+
+/* footer */
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}
+
+.footer .photograper-name {
+  /* position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%); */
+  font-family: Optima;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px){
+  .topnav .topnav-header{
+    width: 100vw;
+  }
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 0.2;
+	}
+
+	30% {
+		opacity: 0.3;
+	}
+
+	40% {
+		opacity: 0.4;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	60% {
+		opacity: 0.6;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	80% {
+		opacity: 0.8;
+	}
+
+	90% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	10% {
+		transform: translateY(3px);
+	}
+
+	20% {
+		transform: translateY(6px);
+	}
+
+	30% {
+		transform: translateY(9px);
+	}
+
+	40% {
+		transform: translateY(12px);
+	}
+
+	50% {
+		transform: translateY(15px);
+	}
+
+	60% {
+		transform: translateY(18px);
+	}
+
+	70% {
+		transform: translateY(21px);
+	}
+
+	80% {
+		transform: translateY(24px);
+	}
+
+	90% {
+		transform: translateY(27px);
+	}
+
+	100% {
+		transform: translateY(30px);
+	}
+}
