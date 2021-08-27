@@ -4,33 +4,44 @@ import { Link } from 'react-router-dom';
 import "../home.css";
 
 class NavbarComponent extends React.Component {
-
     constructor(props) {
         super(props);
         this.refLinks = React.createRef();
         this.refCloseBtn = React.createRef();
-      }
+    }
+
+    componentWillMount() {
+        this.unlisten = this.props.history.listen((location, action) => {
+            const expandedMenu = this.refLinks.current;
+            expandedMenu.classList.add("hide");
+            expandedMenu.classList.remove("show");
+        });
+    }
+
+    componentWillUnmount() {
+        this.unlisten();
+    }
     
-      showMenu() {
+    showMenu() {
         const expandedMenu = this.refLinks.current;
         const closeBtn = this.refCloseBtn.current;
         if (expandedMenu.classList.contains("show")) {
-          expandedMenu.classList.add("hide");
-          expandedMenu.classList.remove("show");
-          closeBtn.style.display="none";
+            expandedMenu.classList.add("hide");
+            expandedMenu.classList.remove("show");
+            closeBtn.style.display="none";
     
         } else {
-          expandedMenu.classList.add("show");
-          expandedMenu.classList.remove("hide");
-          closeBtn.style.display="block";
+            expandedMenu.classList.remove("hide");
+            expandedMenu.classList.add("show");
+            closeBtn.style.display="block";
         }
-      }
+    }
     
-      closeMenu(){
+    closeMenu(){
         const expandedMenu = this.refLinks.current;
         expandedMenu.classList.remove("show");
         expandedMenu.classList.add("hide");
-      }
+    }
 
     render() {
         return (
@@ -53,29 +64,28 @@ class NavbarComponent extends React.Component {
                 <nav className="topnav">
                     <div className="topnav-header" >
                         <div>
-                            <a href="#" className="icon" onClick={() => this.showMenu()}>
+                            <span className="icon" onClick={() => this.showMenu()}>
                                 <svg width="30" height="20" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M29.7891 9.6875H1.21094C0.542137 9.6875 0 10.2296 0 10.8984C0 11.5672 0.542137 12.1094 1.21094 12.1094H29.7891C30.4579 12.1094 31 11.5672 31 10.8984C31 10.2296 30.4579 9.6875 29.7891 9.6875Z" fill="black"></path>
                                     <path d="M29.7891 0H1.21094C0.542137 0 0 0.542137 0 1.21094C0 1.87974 0.542137 2.42188 1.21094 2.42188H29.7891C30.4579 2.42188 31 1.87974 31 1.21094C31 0.542137 30.4579 0 29.7891 0Z" fill="black"></path>
                                     <path d="M29.7891 19.375H1.21094C0.542137 19.375 0 19.9171 0 20.5859C0 21.2547 0.542137 21.7969 1.21094 21.7969H29.7891C30.4579 21.7969 31 21.2547 31 20.5859C31 19.9171 30.4579 19.375 29.7891 19.375Z" fill="black"></path>
                                 </svg>
-                            </a>
+                            </span>
                         </div>
                         <div className="photograper-name">
-                            <a>
-                              <Link to="/">
-                                KATYA_POLYUH
-                              </Link>
-                            </a>
+                            <Link to="/">
+                            KATYA_POLYUH
+                            </Link>
                         </div>
                         <div className="social-links">
                             <a href="https://www.instagram.com/katyapolyuh_ph/">Instagram</a>
                             <a href="">Telegram</a>
                             <a href="">Whatsapp</a>
-                            <button type="button" class="btn btn-price btn-dark btn-sm">Price</button>
+                            <button type="button" className="btn btn-price btn-dark btn-sm">Price</button>
                         </div>
                     </div>
                 </nav>
+                <div>{this.props.children}</div>
             </div>
         )
     }
