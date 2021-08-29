@@ -1,10 +1,9 @@
 body{
-  max-width: 100vw;
-  max-height: 100vh;
   font-family: 'Roboto','Futura PT',sans-serif;
 }
 
 .homepage{
+  position: relative;
   overflow: hidden;
 }
 
@@ -27,11 +26,12 @@ body{
 
 .homepage{
   position: relative;
-  /* background-image: url("../src/img/daniel-j-schwarz-sq2kSZ2scSc-unsplash.jpg"); */
-  /* background-color: rgb(249, 218, 255); */
-  background-size: 100vw 100vw;
+  background-image: url("./img/DSC_6008.jpg");
+  background-size: 100vw 120vw;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100vw;
-  height: calc(100vh + 100px);
+  height: calc(110vh + 50px);
   margin-top: -100px;
 }
 
@@ -63,7 +63,7 @@ body{
   align-items: center;
   z-index: 10;
   width: 100vw;
-  height: 70vh;
+  height: 500px;
   background-color: rgb(106, 64, 64);
 }
 
@@ -138,23 +138,24 @@ body{
   font-size: 12px;
   line-height: 14px;
   letter-spacing: .03em;
+  color: black;
   text-transform: uppercase;
 }
 
 .main-title{
-  height: 105vh;
+  height: 100%;
+  margin-top: 8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(22, 22, 22); 
   width: 100%;
   font-family: 'Futura PT';
 }
 
 .main-title a{
   text-decoration: none;
-  color: rgb(22, 22, 22); 
+  color: white;
 }
 
 .main-title a:hover{
@@ -165,9 +166,10 @@ body{
   font-family: 'Futura PT';
   font-style: normal;
   font-weight: 900;
-  font-size: 62px;
-  line-height: 82px;
+  font-size: 65px;
+  line-height: 80px;
   letter-spacing: .02em;
+  color: white;
   text-transform: uppercase;
   cursor: pointer;
   margin: 0;
@@ -179,45 +181,7 @@ body{
   cursor: pointer; 
 }
 
-/* animated arrow-down */
-.scroll-prompt {
-	position: fixed;
-	z-index: 998;
-	bottom: -80px;
-	left: 50%;
-	margin-left: -80px;
-	width: 160px;
-  height: 160px;
-}
-
-.scroll-prompt .scroll-prompt-arrow-container {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  margin-left: -18px;
-  animation-name: bounce;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-.scroll-prompt .scroll-prompt-arrow {
-  animation-name: opacity;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-.scroll-prompt .scroll-prompt-arrow:last-child {
-  animation-direction: reverse;
-  margin-top: -6px;
-}
-.scroll-prompt .scroll-prompt-arrow > div {
-  width: 20px;
-  height: 20px;
-  border-right: 3px solid rgb(22, 22, 22);;
-  border-bottom: 3px solid rgb(22, 22, 22);
-  transform: rotate(45deg) translateZ(1px);
-}
-
 /* buttons */
-
 .close-btn{
   display: none;
   position: absolute;
@@ -235,20 +199,29 @@ body{
 }
 
 .btn-price:hover {
-  background-color: rgb(252, 252, 252) !important;
-  color: black !important;
+  background-color:transparent !important;
+  color: rgb(0, 0, 0) !important;
   border-color: black !important;
 }
 
+.column-div{
+  text-align: left;
+}
+
 /* portfolio */
-.portfolio img{
+.portfolio img,
+.price img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-section{
-  margin-top: 2em;
+.reviews img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  box-shadow: 1px 2px 24px 1px;
+  border-radius: 5px;
 }
 
 /* footer */
@@ -259,14 +232,10 @@ section{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 300px;
+  height: 500px;
 }
 
 .footer .photograper-name {
-  /* position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%, -50%); */
   font-family: Optima;
   font-style: normal;
   font-weight: 400;
@@ -281,7 +250,6 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
 
 .price .section-individ-shoot .section-individ-shoot-inner{
@@ -290,22 +258,12 @@ section{
   width: 100vw;
 }
 
-.price .section-individ-shoot .section-individ-shoot-inner div{
-  width: 50vw;
+.price .section-individ-shoot .section-individ-shoot-inner .section-individ-shoot-inner-first-div{
+  text-align: right;
 }
 
-.price .section-individ-shoot .section-individ-shoot-inner div:first-child{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 100%;
-  margin-right: 1em;
-}
-
-.price .section-individ-shoot .section-individ-shoot-inner div:last-child{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.price .section-individ-shoot .section-individ-shoot-inner .section-individ-shoot-inner-first-div .section-description-conditions{
+  text-align: right;
 }
 
 .price .section-individ-shoot-inner h6{
@@ -313,21 +271,10 @@ section{
   font-size: 15px;
 }
 
-.price .section-individ-shoot .section-included-price .section-included-price-title {
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.price .section-right-description-conditions span,
 .price .section-description-conditions span{
   font-weight: 700;
   font-size: 15px;
-  margin-top: 3em;
-}
-
-.price .section-individ-shoot .section-included-price .section-right-included-price{
-
+  margin-top: 1.3em;
 }
 
 .price .section-individ-shoot .section-included-price .section-right-included-price-title {
@@ -336,24 +283,183 @@ section{
   text-align: left;
 }
 
-
-.section-right-description-conditions{
-
-}
-
-.price h4{
-  font-weight: 600;
-  margin: 1em 0;
+h4{
+  font-family: Roboto;
+  font-weight: 700 !important;
+  font-size: 32px;
+  line-height: 40px;
+  margin: .5em 0;
   color: rgb(33, 33, 33);
+  text-align: center;
 }
 
-.price .section-individ-shoot .section-description-conditions{
-  text-align: right;
+.additional-info{
+  text-align: center;
+}
+
+.footer .photographer-links{
+  display: flex;
+  margin: .5em 0;
+}
+
+.footer .photographer-number{
+  margin-top: 1em;
+}
+
+.footer .social-links a,
+.footer .social-links span{
+  text-transform: uppercase;
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .social-links span{
+  color: gray;
+}
+
+@media (max-width: 1250px){
+  .homepage{
+    margin-top: -180px;
+  }
+
+  .main-title h1{
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .topnav .topnav-header .photograper-name {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .footer .photograper-name {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .footer  .photographer-links,
+  .footer  .photographer-number{
+    font-size: 10px;
+  }
+
+  .topnav .topnav-header .social-links a{
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: .01em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .topnav .btn-price{
+    font-size: 12px;
+  }
+
+  .icon svg{
+    max-height: 20px;
+    max-width: 20px;
+  }
 }
 
 @media (max-width: 1000px){
   .topnav .topnav-header{
-    width: 100vw;
+    width: 97vw;
+  }
+}
+
+@media (max-width: 991px){
+  .price .section-individ-shoot .section-individ-shoot-inner .section-individ-shoot-inner-first-div{
+    text-align: center;
+  }
+
+  .price .section-individ-shoot .section-individ-shoot-inner .section-individ-shoot-inner-first-div .section-description-conditions{ 
+    text-align: center;
+  }
+
+  .price .section-individ-shoot-inner .column-div{
+    text-align: center;
+  }
+
+  .footer{
+    height: 280px;
+  }
+
+  .reviews img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    box-shadow: 1px 2px 24px 1px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 850px){
+  .homepage{
+    margin-top: -180px;
+    background-size: 110vw 160vw;
+  }
+
+  .topnav .topnav-header .photograper-name {
+    font-size: 21px;
+  }
+
+  .main-title{
+    margin-top: 7em;
+  }
+
+  .main-title h1{
+    font-size: 39px;
+  }
+
+  .topnav{
+    margin: 1.5em 0;
+  }
+
+  .topnav .topnav-header .social-links{
+    display: none;
+  }
+
+  .navbar #expanded-links li a{
+    font-size: 20px;
+  }
+
+  .icon svg{
+    max-height: 20px;
+    max-width: 20px;
+    margin: 0 0 3px 20px;
+  }
+
+  h4{
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px){
+  .section-individ-shoot-img {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 400px){
+  .homepage{
+    height: 110vh;
+    margin-top: -300px;
+    background-size: 110vw 160vw;
+    background-position: center bottom;
+  }
+
+  .main-title h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .footer{
+    height: 200px;
   }
 }
 
