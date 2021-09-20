@@ -65,13 +65,13 @@ class Price extends React.Component  {
         <div className="container my-4">
           <div className="row">
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-1" src={process.env.PUBLIC_URL + '/img/portfolio/DSC_2834.jpg'} className="img img-view lazyloaded" />
+              <img alt="price-1" src={process.env.PUBLIC_URL + '/img/portfolio/individual-1.svg'} className="img img-view lazyloaded" />
             </div>
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-2" src={process.env.PUBLIC_URL + '/img/portfolio/DSC_4253.jpg'} className="img img-view lazyloaded" />
+              <img alt="price-2" src={process.env.PUBLIC_URL + '/img/portfolio/individual-2.svg'} className="img img-view lazyloaded" />
             </div>
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-3" src={process.env.PUBLIC_URL + '/img/portfolio/DSC_5888.jpg'} className="img img-view lazyloaded" />
+              <img alt="price-3" src={process.env.PUBLIC_URL + '/img/portfolio/individual-3.svg'} className="img img-view lazyloaded" />
             </div>
           </div>
         </div>
@@ -129,13 +129,13 @@ class Price extends React.Component  {
         <div className="container my-4">
           <div className="row">
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-4" src={process.env.PUBLIC_URL + '/img/brands/DSC_4812.jpg'} className="img img-view lazyloaded" />
+              <img alt="price-4" src={process.env.PUBLIC_URL + '/img/brands/brand-1.svg'} className="img img-view lazyloaded" />
             </div>
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-5" src={process.env.PUBLIC_URL + '/img/brands/DSC_2159.jpg'} className="img img-view lazyloaded" />
+              <img alt="price-5" src={process.env.PUBLIC_URL + '/img/brands/brand-2.svg'} className="img img-view lazyloaded" />
             </div>
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-6" src={process.env.PUBLIC_URL + '/img/brands/DSC_7446.jpg'} className="img img-view lazyloaded" />
+              <img alt="price-6" src={process.env.PUBLIC_URL + '/img/brands/brand-3.svg'} className="img img-view lazyloaded" />
             </div>
           </div>
         </div>
