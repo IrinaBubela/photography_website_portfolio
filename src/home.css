@@ -318,7 +318,16 @@ h4{
   color: gray;
 }
 
-@media (min-width: 2000px){
+@media screen  
+  and (min-device-width: 1600px)  { 
+  .homepage{
+    background-size: 100vw 100vw;
+    background-position: center center;
+    width: 100vw;
+    height: calc(100vh + 50px);
+    margin-top: -6em;
+  }
+
   .main-title h1{
     font-size: 7em;
   }
@@ -328,9 +337,24 @@ h4{
   }
 }
 
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px)  { 
+  .homepage{
+    background-size: 100vw 120vw;
+    background-position: center center;
+    width: 100vw;
+    height: calc(100vh + 50px);
+    margin-top: -5.5em;
+  }
+}
+
 @media (max-width: 1250px){
   .homepage{
-    margin-top: -100px;
+    background-size: 100vw 120vw;
+    background-position: center center;
+    width: 100vw;
+    height: calc(100vh + 50px);
   }
 
   .main-title h1{
@@ -405,9 +429,19 @@ h4{
 
 @media (max-width: 850px){
   .homepage{
-    margin-top: -160px;
-    height: 130vh;
-    background-size: 110vw 160vw;
+    background-size: 110vw 120vw;
+    background-position: center center;
+    width: 100vw;
+    height: calc(100vh + 50px);
+    margin-top: -5.5em;
+  }
+
+  .topnav .navbar{
+    padding-top: 1em;
+  }
+
+  .topnav .topnav-header{
+    width: 85vw;
   }
 
   .topnav .topnav-header .photograper-name {
@@ -415,7 +449,7 @@ h4{
   }
 
   .main-title{
-    margin-top: 7em;
+    margin-top: 5em;
   }
 
   .main-title h1{
@@ -451,42 +485,58 @@ h4{
 }
 
 @media (max-width: 767px){
+  .homepage{
+    background-size: 110vw 120vw;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -5.5em;
+  }
+
+  .topnav .navbar{
+    padding-top: 1em;
+  }
+
+  .topnav .topnav-header{
+    width: 85vw;
+  }
+
   .section-individ-shoot-img {
     margin-bottom: 2em;
   }
 }
 
+@media (max-width: 576px){
+  .homepage{
+    background-size: 100vw 140vw;
+    width: 100vw;
+    height: 110vh;
+    margin-top: -11.5em;
+  }
+}
+
 @media (max-width: 400px){
   .homepage{
-    height: 107vh;
-    margin-top: -320px;
-    background-size: 120vw 190vw;
-    background-position: center bottom;
+    background-size: 100vw 140vw;
+    width: 100vw;
+    height: 110vh;
+    margin-top: -11.5em;
+  }
+  .topnav a {
+    font-size: 17px;
   }
 
-  .main-title h1 {
+  .icon svg {
+    max-height: 17px;
+    max-width: 17px;
+    margin: 0 0 3px 20px;
+  } 
+
+  .main-title h1{
     font-size: 30px;
-    line-height: 30px;
   }
 
-  .footer{
-    height: 200px;
-  }
-}
-
-@media (max-height: 1200px){
-  .homepage{
-    margin-top: -300px;
-  }
-}
-
-@media (max-height: 3000px){
-  .mainpage{
-    height: 2000px;
-  }
-
-  .homepage{
-    margin-top: -900px;
+  .main-title span{
+    font-size: 17px;
   }
 }
 
