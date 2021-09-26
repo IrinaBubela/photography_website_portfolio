@@ -55,11 +55,11 @@ class NavbarComponent extends React.Component {
                         </svg>
                     </div>
                     <ul >
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/Portfolio">Portfolio</Link></li>
-                        <li><Link to="/price">Price</Link></li>
-                        <li><Link to="/reviews">Reviews</Link></li>
-                        <li><HashLink to="/#footer">Contact</HashLink></li>
+                        <li><Link to="/photography_website_portfolio/">Home</Link></li>
+                        <li><Link to="/photography_website_portfolio/portfolio">Portfolio</Link></li>
+                        <li><Link to="/photography_website_portfolio/price">Price</Link></li>
+                        <li><Link to="/photography_website_portfolio/reviews">Reviews</Link></li>
+                        <li><HashLink to="/photography_website_portfolio/#footer">Contact</HashLink></li>
                     </ul>
                 </div>
                 <nav className="topnav">
@@ -67,21 +67,21 @@ class NavbarComponent extends React.Component {
                         <div>
                             <span className="icon" onClick={() => this.showMenu()}>
                                 <svg width="30" height="20" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M29.7891 9.6875H1.21094C0.542137 9.6875 0 10.2296 0 10.8984C0 11.5672 0.542137 12.1094 1.21094 12.1094H29.7891C30.4579 12.1094 31 11.5672 31 10.8984C31 10.2296 30.4579 9.6875 29.7891 9.6875Z" fill="black"></path>
-                                    <path d="M29.7891 0H1.21094C0.542137 0 0 0.542137 0 1.21094C0 1.87974 0.542137 2.42188 1.21094 2.42188H29.7891C30.4579 2.42188 31 1.87974 31 1.21094C31 0.542137 30.4579 0 29.7891 0Z" fill="black"></path>
-                                    <path d="M29.7891 19.375H1.21094C0.542137 19.375 0 19.9171 0 20.5859C0 21.2547 0.542137 21.7969 1.21094 21.7969H29.7891C30.4579 21.7969 31 21.2547 31 20.5859C31 19.9171 30.4579 19.375 29.7891 19.375Z" fill="black "></path>
+                                    <path d="M29.7891 9.6875H1.21094C0.542137 9.6875 0 10.2296 0 10.8984C0 11.5672 0.542137 12.1094 1.21094 12.1094H29.7891C30.4579 12.1094 31 11.5672 31 10.8984C31 10.2296 30.4579 9.6875 29.7891 9.6875Z" fill="white"></path>
+                                    <path d="M29.7891 0H1.21094C0.542137 0 0 0.542137 0 1.21094C0 1.87974 0.542137 2.42188 1.21094 2.42188H29.7891C30.4579 2.42188 31 1.87974 31 1.21094C31 0.542137 30.4579 0 29.7891 0Z" fill="white"></path>
+                                    <path d="M29.7891 19.375H1.21094C0.542137 19.375 0 19.9171 0 20.5859C0 21.2547 0.542137 21.7969 1.21094 21.7969H29.7891C30.4579 21.7969 31 21.2547 31 20.5859C31 19.9171 30.4579 19.375 29.7891 19.375Z" fill="white "></path>
                                 </svg>
                             </span>
                         </div>
                         <div className="photograper-name" id="photograper-name">
-                            <Link to="/">
+                            <Link to="/photography_website_portfolio/">
                             KATYA_POLYUH
                             </Link>
                         </div>
                         <div className="social-links">
                             <a href="https://www.instagram.com/katyapolyuh_ph/">Instagram</a>
                             <a>(29) 726-25-72</a>
-                            <Link to="/price">
+                            <Link to="/photography_website_portfolio/price">
                                 <button type="button" className="btn btn-price btn-dark btn-sm">Price</button>
                             </Link>
                         </div>

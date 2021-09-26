@@ -23,11 +23,11 @@ function App(){
       <Router>
         <NavbarComponent />
         <Switch>
-          <Route path="/" exact component={MainPage} />
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/price" component={Price}/>
-          <Route path="/reviews" component={Reviews}/>
-          <Route path="/contact" component={Contact}/>
+          <Route path="/photography_website_portfolio" exact component={MainPage} />
+          <Route path="/photography_website_portfolio/portfolio" component={Portfolio}/>
+          <Route path="/photography_website_portfolio/price" component={Price}/>
+          <Route path="/photography_website_portfolio/reviews" component={Reviews}/>
+          <Route path="/photography_website_portfolio/contact" component={Contact}/>
         </Switch>
         <Footer />
       </Router>
