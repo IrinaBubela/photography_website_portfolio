@@ -27,8 +27,8 @@ body{
 
 .homepage{
   position: relative;
-  background-image: url("./img/DSC_6008.jpg");
-  background-size: 100vw 120vw;
+  background-image: url("./img/DSC_6008_n.jpg");
+  background-size: 100vw 140vw;
   background-repeat: no-repeat;
   background-position: center left;
   width: 100vw;
@@ -415,7 +415,7 @@ h4{
   }
 
   .footer{
-    height: 280px;
+    height: auto;
   }
 
   .reviews img{
