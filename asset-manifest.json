@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/photography_website_portfolio/static/css/main.e33fd5ea.chunk.css",
+    "main.css": "/photography_website_portfolio/static/css/main.b0aef749.chunk.css",
     "main.js": "/photography_website_portfolio/static/js/main.43d07f17.chunk.js",
     "main.js.map": "/photography_website_portfolio/static/js/main.43d07f17.chunk.js.map",
     "runtime-main.js": "/photography_website_portfolio/static/js/runtime-main.3a750108.js",
@@ -10,7 +10,7 @@
     "static/js/2.0a877165.chunk.js.map": "/photography_website_portfolio/static/js/2.0a877165.chunk.js.map",
     "index.html": "/photography_website_portfolio/index.html",
     "static/css/2.95e70735.chunk.css.map": "/photography_website_portfolio/static/css/2.95e70735.chunk.css.map",
-    "static/css/main.e33fd5ea.chunk.css.map": "/photography_website_portfolio/static/css/main.e33fd5ea.chunk.css.map",
+    "static/css/main.b0aef749.chunk.css.map": "/photography_website_portfolio/static/css/main.b0aef749.chunk.css.map",
     "static/js/2.0a877165.chunk.js.LICENSE.txt": "/photography_website_portfolio/static/js/2.0a877165.chunk.js.LICENSE.txt",
     "static/media/home.css": "/photography_website_portfolio/static/media/DSC_6008.09a8dec4.svg",
     "static/media/font-awesome.min.css": "/photography_website_portfolio/static/media/fontawesome-webfont.f691f37e.woff"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.3a750108.js",
     "static/css/2.95e70735.chunk.css",
     "static/js/2.0a877165.chunk.js",
-    "static/css/main.e33fd5ea.chunk.css",
+    "static/css/main.b0aef749.chunk.css",
     "static/js/main.43d07f17.chunk.js"
   ]
 }
