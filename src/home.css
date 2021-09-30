@@ -1,11 +1,6 @@
+  
 body{
   font-family: 'Roboto','Scheherazade New',sans-serif;
-}
-
-
-.homepage{
-  position: relative;
-  overflow: hidden;
 }
 
 /* actions */
@@ -17,23 +12,12 @@ body{
   top:-1000px;
 }
 
-.App{
+.app{
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.homepage{
-  position: relative;
-  background-image: url("./img/DSC_6008_n.jpg");
-  background-size: 100vw 140vw;
-  background-repeat: no-repeat;
-  background-position: center left;
-  width: 100vw;
-  height: calc(120vh + 50px);
-  margin-top: -180px;
 }
 
 .navbar{
@@ -143,14 +127,13 @@ body{
   text-transform: uppercase;
 }
 
-.main-title{
-  height: 100%;
-  margin-top: 8em;
+.main-content{
+  background-image: url("./img/DSC_6008.svg");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   font-family: 'Scheherazade New';
 }
 
@@ -168,7 +151,6 @@ body{
   font-style: normal;
   font-weight: 900;
   font-size: 65px;
-  line-height: 80px;
   letter-spacing: .02em;
   color: white;
   text-transform: uppercase;
@@ -319,52 +301,112 @@ h4{
 }
 
 @media screen  
-  and (min-device-width: 1600px)  { 
-  .homepage{
-    background-size: 100vw 130vw;
-    background-position: center center;
+and (min-device-width: 3000px){
+  .topnav .topnav-header {
+    width: 2000px;
+  }
+  
+  .main-content{
+    background-size: 100vw 150vw;
+    background-position: 65% 45%;;
     width: 100vw;
-    height: calc(120vh + 50px);
-    margin-top: -6em;
+    height: 2000px;
+    margin-top: -180px;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-top: 25vw;
   }
 
   .main-title h1{
-    font-size: 5.5em;
+    font-size: 7.5em;
   }
 
   .main-title span{
-    font-size: 2.5em;
+    font-size: 4.5em;
+  }
+}
+
+@media screen  
+  and (min-device-width: 1600px)
+  and (max-device-width: 3000px) { 
+  .main-content{
+    background-size: 100vw 150vw;
+    background-position: 65% 45%;;
+    width: 100vw;
+    height: 2000px;
+    margin-top: -180px;
+  }
+
+  .main-title {
+    text-align: center;
+    margin-top: 25vw;
+  }
+  
+  .main-title h1{
+    font-size: 6.5em;
+  }
+
+  .main-title span{
+    font-size: 3.5em;
   }
 }
 
 @media screen 
   and (min-device-width: 1200px) 
-  and (max-device-width: 1600px)  { 
-  .homepage{
-    background-size: 100vw 130vw;
-    background-position: center center;
+  and (max-device-width: 1600px){
+  .main-content{
+    background-size: 100vw 150vw;
+    background-position: 45% 35%;;
     width: 100vw;
-    height: calc(120vh + 50px);
-    margin-top: -5.5em;
+    height: 1100px;
+    margin-top: -180px;
+  }
+
+  .main-title {
+    text-align: center;
+    margin-top: 45vw;
+  }
+  
+  .main-title h1{
+    font-size: 5em;
+  }
+
+  .main-title span{
+    font-size: 3em;
   }
 }
 
 @media (max-width: 1250px){
-  .homepage{
-    background-size: 100vw 120vw;
-    background-position: center center;
+  .main-content{
+    background-size: 100vw 150vw;
+    background-position: 45% 30%;
     width: 100vw;
-    height: calc(100vh + 50px);
+    height: 800px;
+    margin-top: -180px;
   }
 
+  .main-title {
+    text-align: center;
+    margin-top: 50vw;
+  }
+  
   .main-title h1{
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 4em;
+  }
+
+  .main-title span{
+    font-size: 2em;
   }
 
   .topnav .topnav-header .photograper-name {
     font-size: 24px;
     line-height: 20px;
+  }
+
+  .footer{
+    height: 350px;
   }
 
   .footer .photograper-name {
@@ -395,13 +437,27 @@ h4{
   }
 }
 
-@media (max-width: 1000px){
-  .topnav .topnav-header{
-    width: 97vw;
-  }
-}
-
 @media (max-width: 991px){
+  .topnav{
+    margin: 1.5em 0;
+  }
+
+  .topnav .navbar{
+    padding-top: 1em;
+  }
+
+  .topnav .topnav-header .social-links{
+    display: none;
+  }
+
+  .main-title h1{
+    font-size: 4em;
+  }
+
+  .main-title span{
+    font-size: 2em;
+  }
+
   .price .section-individ-shoot .section-individ-shoot-inner .section-individ-shoot-inner-first-div{
     text-align: center;
   }
@@ -415,7 +471,7 @@ h4{
   }
 
   .footer{
-    height: auto;
+    height: 250px;
   }
 
   .reviews img{
@@ -425,20 +481,6 @@ h4{
     box-shadow: 1px 2px 24px 1px;
     border-radius: 5px;
   }
-}
-
-@media (max-width: 850px){
-  .homepage{
-    background-size: 110vw 120vw;
-    background-position: center center;
-    width: 100vw;
-    height: calc(100vh + 50px);
-    margin-top: -5.5em;
-  }
-
-  .topnav .navbar{
-    padding-top: 1em;
-  }
 
   .topnav .topnav-header{
     width: 85vw;
@@ -446,22 +488,6 @@ h4{
 
   .topnav .topnav-header .photograper-name {
     font-size: 21px;
-  }
-
-  .main-title{
-    margin-top: 4em;
-  }
-
-  .main-title h1{
-    font-size: 39px;
-  }
-
-  .topnav{
-    margin: 1.5em 0;
-  }
-
-  .topnav .topnav-header .social-links{
-    display: none;
   }
 
   .icon svg{
@@ -481,10 +507,12 @@ h4{
 }
 
 @media (max-width: 767px){
-  .homepage{
-    background-size: 110vw 120vw;
-    height: 100vh;
-    margin-top: -5.5em;
+  .main-title h1{
+    font-size: 3em;
+  }
+
+  .main-title span{
+    font-size: 1.5em;
   }
 
   .topnav .navbar{
@@ -501,11 +529,16 @@ h4{
 }
 
 @media (max-width: 576px){
-  .homepage{
-    background-size: 100vw 140vw;
+  .main-content{
+    background-size: 100vw 150vw;
+    background-position: 45% 20%;
     width: 100vw;
-    height: 110vh;
-    margin-top: -11.5em;
+    height: 700px;
+    margin-top: -180px;
+  }
+
+  .footer{
+    height: 150px;
   }
 
   .icon svg{
@@ -519,20 +552,29 @@ h4{
   }
 }
 
-@media (max-width: 400px){
-  .homepage{
-    background-size: 100vw 140vw;
+@media (max-width: 450px){
+  .main-content{
+    background-size: auto;
+    background-position: 45% 20%;
     width: 100vw;
-    height: 110vh;
-    margin-top: -15.5em;
+    height: 80vh;
+    margin-top: -100px;
+  }
+
+  .footer{
+    height: 20vh;
+  }
+
+  .main-title{
+    margin-top: 60vw;
   }
 
   .main-title h1{
-    font-size: 30px;
+    font-size: 2em;
   }
 
   .main-title span{
-    font-size: 17px;
+    font-size: 1em;
   }
 }
 
