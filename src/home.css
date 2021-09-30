@@ -557,7 +557,7 @@ and (min-device-width: 3000px){
     background-size: auto;
     background-position: 45% 20%;
     width: 100vw;
-    height: 80vh;
+    height: 65vh;
     margin-top: -100px;
   }
 
@@ -566,7 +566,7 @@ and (min-device-width: 3000px){
   }
 
   .main-title{
-    margin-top: 60vw;
+    margin-top: 80vw;
   }
 
   .main-title h1{
