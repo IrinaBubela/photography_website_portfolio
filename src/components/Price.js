@@ -13,7 +13,7 @@ class Price extends React.Component  {
             <div className="col-lg-6 col-sm-12 section-individ-shoot-inner-first-div column-div">
               <section>
                 <h6>Пакет Light</h6>
-                <span>60 рублей</span>
+                <span>80 рублей</span>
               </section>
               <div className="section-description-conditions column-div">
                 <span>В стоимость входит</span>
