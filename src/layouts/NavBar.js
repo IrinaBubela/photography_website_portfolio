@@ -55,11 +55,11 @@ class NavbarComponent extends React.Component {
                         </svg>
                     </div>
                     <ul >
-                        <li><Link to="/photography_website_portfolio/">Home</Link></li>
-                        <li><Link to="/photography_website_portfolio/portfolio">Portfolio</Link></li>
-                        <li><Link to="/photography_website_portfolio/price">Price</Link></li>
-                        <li><Link to="/photography_website_portfolio/reviews">Reviews</Link></li>
-                        <li><HashLink to="/photography_website_portfolio/#footer">Contact</HashLink></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/price">Price</Link></li>
+                        <li><Link to="/reviews">Reviews</Link></li>
+                        <li><HashLink to="/#footer">Contact</HashLink></li>
                     </ul>
                 </div>
                 <nav className="topnav">
@@ -74,14 +74,14 @@ class NavbarComponent extends React.Component {
                             </span>
                         </div>
                         <div className="photograper-name" id="photograper-name">
-                            <Link to="/photography_website_portfolio/">
+                            <Link to="/">
                             KATYA_POLYUH
                             </Link>
                         </div>
                         <div className="social-links">
                             <a href="https://www.instagram.com/katyapolyuh_ph/">Instagram</a>
                             <a>(29) 726-25-72</a>
-                            <Link to="/photography_website_portfolio/price">
+                            <Link to="/price">
                                 <button type="button" className="btn btn-price btn-dark btn-sm">Price</button>
                             </Link>
                         </div>
