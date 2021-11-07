@@ -7,8 +7,8 @@ class MainPage extends React.Component  {
     return (
         <div className="main-content">
           <div className="main-title">
-            <h1><Link to="/photography_website_portfolio/Portfolio">PORTFOLIO</Link></h1>
-            <span><Link to="/photography_website_portfolio/Portfolio">смотреть галерею</Link></span>
+            <h1><Link to="/portfolio">PORTFOLIO</Link></h1>
+            <span><Link to="/portfolio">смотреть галерею</Link></span>
           </div>
         </div>
     );

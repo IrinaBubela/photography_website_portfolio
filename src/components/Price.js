@@ -21,7 +21,7 @@ class Price extends React.Component  {
                   Помощь в подборе образа<br/>
                   Помощь в позировании<br/>
                   Подбор локации<br/>
-                  Ретушь и цветокоррекция 7 фото (доп. фото 7р)<br/>
+                  Ретушь и цветокоррекция 6 фото (доп. фото 7р)<br/>
                   Ссылка на файлообменник со всеми фотографиями в хорошем качестве<br/>
                   Срок обработки фото до 20 дней <br/>
                 </p>
@@ -30,7 +30,7 @@ class Price extends React.Component  {
                   Студия (от 35 рублей в час)<br/>
                   Работа визажиста.<br/>
                   Мэйк и укладка ( от 100 рублей )<br/>
-                  Работа стилиста (от 50 рублей)<br/>
+                  Работа стилиста (от 120 рублей)<br/>
                   *Для бронирования даты необходимо внести предоплату. (30 рублей на карту или на кошелек в приложении Оплати)
                 </p>
               </div>
@@ -55,7 +55,7 @@ class Price extends React.Component  {
                   Студия (от 35 рублей в час)<br/>
                   Работа визажиста.<br/>
                   Мэйк и укладка ( от 100 рублей )<br/>
-                  Работа стилиста (от 50 рублей) <br/>
+                  Работа стилиста (от 120 рублей) <br/>
                   *Для бронирования даты необходимо внести предоплату. (50 рублей на карту или на кошелек в приложении Оплати)
                 </p>
               </div>
@@ -65,13 +65,13 @@ class Price extends React.Component  {
         <div className="container my-4">
           <div className="row">
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-1" src={process.env.PUBLIC_URL + '/img/portfolio/portfolio-1.svg'} className="img img-view lazyloaded" />
+              <img alt="price-1" src={process.env.PUBLIC_URL + '/img/portfolio/price-1.png'} className="img img-view lazyloaded" />
             </div>
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-2" src={process.env.PUBLIC_URL + '/img/portfolio/portfolio-2.svg'} className="img img-view lazyloaded" />
+              <img alt="price-2" src={process.env.PUBLIC_URL + '/img/portfolio/price-2.png'} className="img img-view lazyloaded" />
             </div>
             <div className="col-md-4 col-sm-12 pb-4">
-              <img alt="price-3" src={process.env.PUBLIC_URL + '/img/portfolio/portfolio-5.svg'} className="img img-view lazyloaded" />
+              <img alt="price-3" src={process.env.PUBLIC_URL + '/img/portfolio/price-3.png'} className="img img-view lazyloaded" />
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ class Price extends React.Component  {
                   <span>Отдельно оплачивается:</span> <br/>
                     Студия (от 35 рублей в час)<br/>
                     Работа визажиста. Мэйк и укладка ( от 100 рублей )<br/>
-                    Работа стилиста. Стилизация аксессуарами и обувью ( от 50 р)<br/>
+                    Работа стилиста. Стилизация аксессуарами и обувью ( от 120 р)<br/>
                     *Для бронирования даты необходимо внести предоплату. (50 рублейна карту или на кошелек в приложении Оплати)
                   </p>
                 </div>
@@ -118,7 +118,7 @@ class Price extends React.Component  {
                   <span>Отдельно оплачивается:</span> <br/>
                     Студия (от 35 рублей в час)<br/>
                     Работа визажиста. Мэйк и укладка ( от 100 рублей )<br/>
-                    Работа стилиста. Стилизация аксессуарами и обувью ( от 50 р)<br/>
+                    Работа стилиста. Стилизация аксессуарами и обувью ( от 120 р)<br/>
                     *Для бронирования даты необходимо внести предоплату. (100 рублейна карту или на кошелек в приложении Оплати)
                   </p>
                 </div>
