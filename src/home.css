@@ -128,7 +128,7 @@ body{
 }
 
 .main-content{
-  background-image: url("./img/mainpage.jpg");
+  background-image: url("./img/mainpage.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
